@@ -13,4 +13,9 @@ def guardar_dado(dr,dg,n):
     del dr[n]
     lista = [dr,dg]
     return lista
+def remover_dado(dr,dg,n):
+    dr.append(dg[n])
+    del dg[n]
+    lista_3 = [dr,dg]
+    return lista_3
 
