@@ -18,4 +18,11 @@ def remover_dado(dr,dg,n):
     del dg[n]
     lista_3 = [dr,dg]
     return lista_3
+def calcula_pontos_regra_simples(l):
+    dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    for i in range(len(l)):
+        if l[i] in dic:
+            dic[l[i]] += l[i]
+    return dic
+    
 
