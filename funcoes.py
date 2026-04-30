@@ -45,3 +45,16 @@ def calcula_pontos_sequencia_alta(l):
     elif 2 in l and 3 in l and 4 in l and 5 in l and 6 in l:
         n += 30
     return n
+def calcula_pontos_full_house(l):
+    contagem = {}
+    for i in l:
+        if i in contagem:
+            contagem[i] += 1
+        else:
+            contagem[i] = 1
+    if len(contagem) == 2 and 2 in contagem.values() and 3 in contagem.values():
+        total = 0
+        for i in l:
+            total += i
+        return total
+    return 0
