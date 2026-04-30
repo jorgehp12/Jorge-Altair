@@ -24,5 +24,10 @@ def calcula_pontos_regra_simples(l):
         if l[i] in dic:
             dic[l[i]] += l[i]
     return dic
+def calcula_pontos_soma(l):
+    n = 0
+    for numero in l:
+        n += numero
+    return n
     
 
