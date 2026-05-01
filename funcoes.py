@@ -58,3 +58,11 @@ def calcula_pontos_full_house(l):
             total += i
         return total
     return 0
+def calcula_pontos_quadra(dados):
+    for valor in dados:
+        if dados.count(valor) >= 4:
+            total = 0
+            for dado in dados:
+                total += dado
+            return total
+    return 0
